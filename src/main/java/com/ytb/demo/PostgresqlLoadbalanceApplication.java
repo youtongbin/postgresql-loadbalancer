@@ -3,7 +3,9 @@ package com.ytb.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
+
+@SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class)
 public class PostgresqlLoadbalanceApplication {
 
 	public static void main(String[] args) {
