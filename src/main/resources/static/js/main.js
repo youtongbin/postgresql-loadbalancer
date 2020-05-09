@@ -1,3 +1,8 @@
+/**
+ * 删除
+ * @param e
+ * @returns
+ */
 function deleteUser(e){
 	var id = e.value
 	
@@ -29,6 +34,10 @@ function deleteUser(e){
 	})
 }
 
+/**
+ * 保存信息
+ * @returns
+ */
 function saveUser(){
 	var id = $('#input_id')[0].value
 	var type = "POST"
@@ -67,6 +76,11 @@ function saveUser(){
 	})
 }
 
+/**
+ * 表单填充
+ * @param e
+ * @returns
+ */
 function updateUser(e){
 	$('#input_id')[0].value = e.value
 	$('#input_name')[0].value = e.name
