@@ -15,7 +15,7 @@
  Date: 09/05/2020 14:03:20
 */
 
-nextval('user_ytb_id_seq');
+CREATE SEQUENCE user_ytb_id_seq START 10;
 
 -- ----------------------------
 -- Table structure for user_ytb
