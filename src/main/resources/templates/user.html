@@ -38,6 +38,14 @@
 	<br />
 	
 	<div>
+		<div>
+			<p>删除时数据源节点选择</p>
+			<form id="selectSource">
+				主节点<input type="radio" name="source" value="master" /> 
+				从节点<input type="radio" name="source" value="slave" /> 
+			</form>
+		</div>
+		<br />
 		<h3>列表</h3>
 		<table>
 	    	<tr>
@@ -46,7 +54,9 @@
 	    		<th>年龄</th>
 	    		<th>地址</th>
 	    		<th>修改</th>
-	    		<th>删除</th>
+	    		<th>
+	    			删除
+	    		</th>
 	    	</tr>
 	    	<tr th:each="user : ${userList}">
 		    	<td th:text="${user.name}">用户名</td>

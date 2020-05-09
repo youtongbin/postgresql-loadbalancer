@@ -1,12 +1,21 @@
 function deleteUser(e){
-	console.log('删除')
 	var id = e.value
-	console.log(id)
+	
+	var sources = $('#selectSource')[0].elements
+	var url = "/user/" + id //主节点删除测试地址
+	for(let source of sources){
+		if(source.checked && source.value == "slave"){
+			url = "/user/slave/" + id //从节点删除测试地址
+			console.log(source.value)
+			break
+		}
+	}
+	
 	$.ajax({
 		type: "DELETE",
 		dataType: "json",
 		contentType: "application/json",
-		url: "/user/" + id,
+		url: url,
 		success: function(data){
 			if(data){
 				alert('id为'+ id + '的用户信息删除成功！')
