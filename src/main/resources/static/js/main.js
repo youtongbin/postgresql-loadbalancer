@@ -5,7 +5,6 @@
  */
 function deleteUser(e){
 	var id = e.value
-	
 	var sources = $('#selectSource')[0].elements
 	var url = "/user/" + id //主节点删除测试地址
 	for(let source of sources){
