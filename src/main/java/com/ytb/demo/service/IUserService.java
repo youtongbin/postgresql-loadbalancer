@@ -7,7 +7,7 @@ import com.ytb.demo.pojo.User;
 /**
  * user service
  *
- * @author you_ybin
+ * @author you_tbin
  */
 public interface IUserService {
 	

@@ -15,7 +15,7 @@ import com.ytb.demo.pojo.User;
 /**
  * user dao
  *
- * @author you_ybin
+ * @author you_tbin
  */
 @Mapper
 public interface UserDao {

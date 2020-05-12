@@ -12,7 +12,7 @@ import com.ytb.demo.service.IUserService;
 /**
  * user service impl
  *
- * @author you_ybin
+ * @author you_tbin
  */
 @Service
 public class UserServiceImpl implements IUserService {

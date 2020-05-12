@@ -3,7 +3,7 @@ package com.ytb.demo.pojo;
 /**
  * User
  *
- * @author you_ybin
+ * @author you_tbin
  */
 public class User {
 	
